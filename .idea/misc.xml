@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1145" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/drawable/backrepeat.xml" value="0.1145" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1145" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/activity_main.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/activity_notification_message.xml" value="0.29010416666666666" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/fragment_add_todo.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/fragment_details_todo.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/fragment_item_todo.xml" value="0.29010416666666666" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/fragment_item_todo_list.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/fragment_list_todo.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/fragment_timer_picker.xml" value="0.29010416666666666" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/notification_layout.xml" value="0.29010416666666666" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/todo_item.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/OSCAR/AndroidStudioProjects/ProyectoFinal/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1145" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

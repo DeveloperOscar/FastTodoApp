@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".view.DetailsTodoFragment">
+
+    <EditText
+        android:id="@+id/todoName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="23sp"
+        android:layout_marginEnd="0.010dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnConfirmaChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        android:hint="Aqui va el nombre de la tarea"
+        />
+
+    <EditText
+        android:id="@+id/todoTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:inputType="none"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnIconTime"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todoName"
+        app:layout_constraintVertical_bias="0.03"
+        tools:text="17:40" />
+
+    <ImageButton
+        android:id="@+id/btnIconTime"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/clock"
+        app:layout_constraintBottom_toBottomOf="@id/todoTime"
+        app:layout_constraintEnd_toStartOf="@id/todoCalendar"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintStart_toEndOf="@id/todoTime"
+        app:layout_constraintTop_toTopOf="@id/todoTime" />
+
+
+    <EditText
+        android:id="@+id/todoCalendar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:inputType="none"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnIconTime"
+        app:layout_constraintEnd_toStartOf="@id/btnIconDate"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/btnIconTime"
+        app:layout_constraintTop_toTopOf="@id/btnIconTime"
+        tools:text="12/12/1999" />
+
+    <ImageButton
+        android:id="@+id/btnIconDate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:padding="0dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/calendar"
+        app:layout_constraintBottom_toBottomOf="@id/todoCalendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/todoCalendar"
+        app:layout_constraintTop_toTopOf="@id/todoCalendar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvPriority"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Prioridad:"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/colorPriority"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/todoTime"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <View
+        android:id="@+id/colorPriority"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        tools:background="@color/black"
+        app:layout_constraintStart_toEndOf="@id/tvPriority"
+        app:layout_constraintEnd_toStartOf="@id/todoPriority"
+        app:layout_constraintTop_toTopOf="@id/tvPriority"
+        app:layout_constraintBottom_toBottomOf="@id/tvPriority"
+     />
+
+    <Spinner
+        android:id="@+id/todoPriority"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvPriority"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/colorPriority"
+        app:layout_constraintTop_toTopOf="@id/tvPriority" />
+
+    <View
+        android:id="@+id/viewBarrier"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#6A6466"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/todoPriority"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <EditText
+        android:id="@+id/todoDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="top"
+        android:inputType="text|textMultiLine"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Agregue una descripción"
+        app:layout_constraintTop_toBottomOf="@id/viewBarrier"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnConfirmaChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom|top"
+        android:src="@drawable/check"
+        app:rippleColor="@color/black"
+        app:maxImageSize="50dp"
+        android:contentDescription="boton para confirmar los cambios"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.99999"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
